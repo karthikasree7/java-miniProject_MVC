@@ -37,7 +37,7 @@ public class AddressBookDAOImplementation implements AddressBookDAO{
           conn = DBConnection.getInstance().getConnect();
            st = conn.createStatement();
            String qry;
-           qry = "insert into AddressBook values ('"+person.getName()+"','"+person.getMob()+"','"+person.getEmail()+"')";
+           qry = "insert into AddressBook values ('"+person.getName()+"','"+person.getMob()+"','"+person.getEmail()+"','"+person.getAddress()+"')";
            st.executeUpdate(qry);
            conn.close();
         }
@@ -75,7 +75,7 @@ public class AddressBookDAOImplementation implements AddressBookDAO{
            st = conn.createStatement();
            
            System.out.println();person.getName();
-            String qry="update AddressBook set name='"+person.getName()+"',mob='"+person.getMob()+"',email='"+person.getEmail()+"' where name='"+name+"'";
+           String qry="update AddressBook set name='"+person.getName()+"',mob='"+person.getMob()+"',email='"+person.getEmail()+"','"+person.getAddress()+"' where name='"+name+"')";
            st.executeUpdate(qry);
            conn.close();
         }
@@ -133,7 +133,7 @@ public class AddressBookDAOImplementation implements AddressBookDAO{
              detailPanel.setName(rs.getString("name"));
              detailPanel.seteMail(rs.getString("email"));
              detailPanel.setMobile(rs.getString("mob"));
-             
+             detailPanel.setAddress(rs.getString("address")); 
            }
             conn.close();
         }

@@ -160,6 +160,7 @@ public class AddressBookController {
         dialog.getPanel().setName(detailPanel.getNameField().getText());
         dialog.getPanel().setMobile(detailPanel.getMobileField().getText());
         dialog.getPanel().seteMail(detailPanel.geteMailField().getText());
+         dialog.getPanel().setAddress(detailPanel.getAddressField().getText());
         view.getMainGUIFrame().setVisible(false);
         choiceListener = new ActionListener() {
             @Override
@@ -237,6 +238,7 @@ public class AddressBookController {
          detailPanel.getNameField().setEditable(false);
          detailPanel.getMobileField().setEditable(false);
          detailPanel.geteMailField().setEditable(false);
+         
         }
     }  //loadPersons ends
     
