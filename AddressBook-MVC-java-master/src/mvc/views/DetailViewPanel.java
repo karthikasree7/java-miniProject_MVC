@@ -37,8 +37,10 @@ public javax.swing.JTextField getAddressField()
     
 
     public void setjTextField1(JTextField jTextField1) {
+        
         this.txt_address = jTextField1;
     }
+    
      public javax.swing.JTextField getMobileField()
     {
         
@@ -111,7 +113,7 @@ public javax.swing.JTextField getAddressField()
         jLabel2.setText("Mobile Number*");
 
         jLabel3.setFont(new java.awt.Font("Engravers MT", 1, 12)); // NOI18N
-        jLabel3.setText("Email ID");
+        jLabel3.setText("Email ID *");
 
         txt_name.setFont(new java.awt.Font("Engravers MT", 1, 12)); // NOI18N
         txt_name.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));

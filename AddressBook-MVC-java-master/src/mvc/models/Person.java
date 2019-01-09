@@ -52,7 +52,7 @@ public class Person {
         this.name = name;
         this.mob = mob;
         this.email = email;
-        this.address = address;
+        this.address =Address;
         
     }
     
